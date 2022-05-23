@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401c1047-4ba0-4343-bc92-eba4642051a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/loginNewUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/practiceform/practiceFormPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/practiceQA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practiceQA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practiceQA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/practiceform/practiceQA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,12 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.loginNewUser.createUserAndLogin">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="seleniumlearning.practiceform" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.practiceQA.setupDriver">
     <configuration name="loginNewUser.createUserAndLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
       <option name="PACKAGE_NAME" value="" />
@@ -53,8 +58,8 @@
     </configuration>
     <configuration name="practiceQA.demoSeleniumSetup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="practiceQA" />
+      <option name="PACKAGE_NAME" value="seleniumlearning.practiceform" />
+      <option name="MAIN_CLASS_NAME" value="seleniumlearning.practiceform.practiceQA" />
       <option name="METHOD_NAME" value="demoSeleniumSetup" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -63,8 +68,8 @@
     </configuration>
     <configuration name="practiceQA.setupDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="practiceQA" />
+      <option name="PACKAGE_NAME" value="seleniumlearning.practiceform" />
+      <option name="MAIN_CLASS_NAME" value="seleniumlearning.practiceform.practiceQA" />
       <option name="METHOD_NAME" value="setupDriver" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -73,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.loginNewUser.createUserAndLogin" />
         <item itemvalue="JUnit.practiceQA.setupDriver" />
+        <item itemvalue="JUnit.loginNewUser.createUserAndLogin" />
         <item itemvalue="JUnit.practiceQA.demoSeleniumSetup" />
       </list>
     </recent_temporary>
