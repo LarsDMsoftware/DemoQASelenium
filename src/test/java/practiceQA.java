@@ -35,13 +35,18 @@ public class practiceQA {
         driver.findElement(By.id("currentAddress")).sendKeys("veldkant 33a 2550 kontich");
         driver.findElement(By.id("dateOfBirthInput")).click();
 
+
         Select datepickerMonth = new Select(driver.findElement(By.className("react-datepicker__month-select")));
         datepickerMonth.selectByIndex(11);
-
         Select datepickerYear = new Select(driver.findElement(By.className("react-datepicker__year-select")));
         datepickerYear.selectByValue("1995");
-
         driver.findElement(By.xpath("//div[text()='3']")).click();
+
+
+        driver.findElement(By.id("react-select-3-input")).sendKeys("Rajasthan" + Keys.ENTER);
+        driver.findElement(By.id("react-select-4-input")).sendKeys("Jaipur" + Keys.ENTER);
+
+        driver.findElement(By.id("firstName")).submit();
     }
 
 }
