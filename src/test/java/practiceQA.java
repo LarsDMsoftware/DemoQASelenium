@@ -41,7 +41,7 @@ public class practiceQA {
         Select datepickerYear = new Select(driver.findElement(By.className("react-datepicker__year-select")));
         datepickerYear.selectByValue("1995");
 
-        driver.findElement(By.xpath("//div[@aria-label='Choose Sunday, December 3rd, 1995']")).click();
+        driver.findElement(By.xpath("//div[text()='3']")).click();
     }
 
 }
