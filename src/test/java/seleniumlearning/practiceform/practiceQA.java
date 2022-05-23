@@ -12,40 +12,49 @@ public class practiceQA {
 
 
     @Test
-    public void setupDriver() {
+    public void fillInFormFieldByField() {
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
 
         practiceFormPage page = new practiceFormPage(driver);
 
-        page.driver.get("https://demoqa.com/automation-practice-form");
-
-        WebElement headerSite = practiceFormPage.driver.findElement(By.className("main-header"));
-        assertEquals(headerSite.getText(), "Practice Form");
+        page.navigation();
+        assertEquals(page.navigationCheck().getText(), "Practice Form");
 
         page.firstNameField("Lars");
-        page.driver.findElement(By.id("lastName")).sendKeys("De Maere");
-        page.driver.findElement(By.id("userEmail")).sendKeys("lars.demaere@bignited.be");
-        page.driver.findElement(By.xpath("//label[@for='gender-radio-1']")).click();
-        page.driver.findElement(By.id("userNumber")).sendKeys("0123456789");
-        page.driver.findElement(By.id("subjectsInput")).sendKeys("Practice QA Form");
-        page.driver.findElement(By.xpath("//label[@for='hobbies-checkbox-1']")).click();
-        page.driver.findElement(By.xpath("//label[@for='hobbies-checkbox-3']")).click();
-        page.driver.findElement(By.id("currentAddress")).sendKeys("veldkant 33a 2550 kontich");
-        page.driver.findElement(By.id("dateOfBirthInput")).click();
+        page.lastNameField("De Maere");
+        page.emailField("lars.demaere@bignited.be");
+        page.maleGenderRadioSelect();
+        page.phoneNumberField("0123456789");
+        page.subjectField("Practice QA Form");
+        page.addressField("veldkant 33a 2550 kontich");
+        page.dateOfBirthPicker(3,12,1995);
+        page.hobbyFieldSelector("1");
+        page.hobbyFieldSelector("3");
 
 
-        Select datepickerMonth = new Select(page.driver.findElement(By.className("react-datepicker__month-select")));
-        datepickerMonth.selectByIndex(11);
-        Select datepickerYear = new Select(page.driver.findElement(By.className("react-datepicker__year-select")));
-        datepickerYear.selectByValue("1995");
-        page.driver.findElement(By.xpath("//div[text()='3']")).click();
+        page.selectState("Rajasthan");
+        page.selectCity("Jaipur");
+
+        page.submit();
 
 
-        page.driver.findElement(By.id("react-select-3-input")).sendKeys("Rajasthan" + Keys.ENTER);
-        page.driver.findElement(By.id("react-select-4-input")).sendKeys("Jaipur" + Keys.ENTER);
+        driver.quit();
+    }
 
-        page.driver.findElement(By.id("firstName")).submit();
+    @Test
+    public void fillInFormFromPageObjectModel(){
+        WebDriverManager.chromedriver().setup();
+        ChromeDriver driver = new ChromeDriver();
+
+        practiceFormPage page = new practiceFormPage(driver);
+
+        page.navigation();
+        page.navigationCheck();
+
+        page.fillInForm();
+
+        driver.quit();
     }
 
 }
