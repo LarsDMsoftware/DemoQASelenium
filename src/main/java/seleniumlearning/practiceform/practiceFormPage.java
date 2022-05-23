@@ -90,17 +90,17 @@ public class practiceFormPage {
 
 
     public void fillInForm(){
-        this.firstNameField("");
-        this.lastNameField("");
-        this.emailField("");
+        this.firstNameField("TestName");
+        this.lastNameField("TestLastName");
+        this.emailField("lars.demaere@bignition.com");
         this.femaleGenderRadioSelect();
-        this.phoneNumberField("");
-        this.subjectField("");
-        this.addressField("");
+        this.phoneNumberField("0123456788");
+        this.subjectField("Practice QA Form");
+        this.addressField("Veldkant 33B Kontich");
         this.dateOfBirthPicker(1,1,1991);
-        this.hobbyFieldSelector("");
-        this.selectCity("");
-        this.selectCity("");
+        this.hobbyFieldSelector("2");
+        this.selectCity("NCR");
+        this.selectCity("Delhi");
         this.submit();
     }
 }
