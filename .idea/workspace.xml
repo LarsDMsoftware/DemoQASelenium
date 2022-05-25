@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401c1047-4ba0-4343-bc92-eba4642051a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/WebTablesModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/WebTablesModuleTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/RadioButtonModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/RadioButtonModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/RadioButtonModuleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/RadioButtonModuleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,23 +45,7 @@
       <recent name="seleniumlearning.practiceform" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RadioButtonModuleTests">
-    <configuration name="CheckBoxModuleTests.checkBoxExpand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-DemoQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="seleniumlearning.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="seleniumlearning.elements" />
-      <option name="MAIN_CLASS_NAME" value="seleniumlearning.elements.CheckBoxModuleTests" />
-      <option name="METHOD_NAME" value="checkBoxExpand" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WebTablesModuleTests.addNewRecordTest">
     <configuration name="RadioButtonModuleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
       <extension name="coverage">
@@ -109,17 +93,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="practiceQA.fillInFormFromPageObjectModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTablesModuleTests.addNewRecordButtonClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumlearning.practiceform.*" />
+          <option name="PATTERN" value="seleniumlearning.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumlearning.practiceform" />
-      <option name="MAIN_CLASS_NAME" value="seleniumlearning.practiceform.practiceQA" />
-      <option name="METHOD_NAME" value="fillInFormFromPageObjectModel" />
+      <option name="PACKAGE_NAME" value="seleniumlearning.elements" />
+      <option name="MAIN_CLASS_NAME" value="seleniumlearning.elements.WebTablesModuleTests" />
+      <option name="METHOD_NAME" value="addNewRecordButtonClick" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesModuleTests.addNewRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="seleniumlearning.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="seleniumlearning.elements" />
+      <option name="MAIN_CLASS_NAME" value="seleniumlearning.elements.WebTablesModuleTests" />
+      <option name="METHOD_NAME" value="addNewRecordTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTablesModuleTests.addNewRecordTest" />
+        <item itemvalue="JUnit.WebTablesModuleTests.addNewRecordButtonClick" />
         <item itemvalue="JUnit.RadioButtonModuleTests" />
         <item itemvalue="JUnit.RadioButtonModuleTests.noRadioButtonCheck" />
         <item itemvalue="JUnit.RadioButtonModuleTests.checkBoxExpand" />
-        <item itemvalue="JUnit.CheckBoxModuleTests.checkBoxExpand" />
-        <item itemvalue="JUnit.practiceQA.fillInFormFromPageObjectModel" />
       </list>
     </recent_temporary>
   </component>
