@@ -1,3 +1,5 @@
+package seleniumlearning.practiceform;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.hc.core5.util.Timeout;
 import org.junit.Test;
