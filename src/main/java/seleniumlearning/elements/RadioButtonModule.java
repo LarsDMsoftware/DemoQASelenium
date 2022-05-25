@@ -1,6 +1,7 @@
 package seleniumlearning.elements;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class RadioButtonModule {
@@ -27,10 +28,20 @@ public class RadioButtonModule {
     }
 
     public void noRadioBtn(){
-        this.driver.findElement(By.id("noRadio")).click();
+
+        try {
+            this.driver.findElement(By.xpath("//label[@for='noRadio']")).click();
+        } catch (NoSuchElementException e) {
+        }
     }
 
     public String returnRadioValue(){
-        return this.driver.findElement(By.className("text-success")).getText();
+        String textValue = "";
+        try {
+             textValue = this.driver.findElement(By.className("text-success")).getText();
+        } catch (NoSuchElementException e) {
+            return "false";
+        }
+        return textValue;
     }
 }

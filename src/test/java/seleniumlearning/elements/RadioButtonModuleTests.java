@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.*;
@@ -38,6 +39,18 @@ public class RadioButtonModuleTests {
         page.navigation();
         page.impressiveRadioBtn();
         assertEquals("Impressive", page.returnRadioValue());
+        testDriver.quit();
+    }
+
+    @Test
+    public void noRadioButtonCheck() {
+
+        ChromeDriver testDriver = setup();
+        RadioButtonModule page = new RadioButtonModule(testDriver);
+
+        page.navigation();
+        page.noRadioBtn();
+        assertFalse(Boolean.parseBoolean(page.returnRadioValue()));
         testDriver.quit();
     }
 
