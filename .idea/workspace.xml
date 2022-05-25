@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401c1047-4ba0-4343-bc92-eba4642051a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/WebTablesModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/WebTablesModuleTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/WebTablesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/WebTablesModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/WebTablesModuleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/WebTablesModuleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
