@@ -77,7 +77,8 @@ public class WebTablesModule {
                 stringArray.add(this.driver.findElement(By.xpath(String.format("//div[text()='%s']",n))).getText())
         );
         */
-        return this.driver.findElement(By.xpath(String.format("//div[text()='%s'", input))).getText();
+        System.out.println(String.format("//div[contains(text()='%s')", input));
+        return this.driver.findElement(By.xpath(String.format("//div[contains(text()='%s')", input))).getText();
     }
 
     public void quit(){
