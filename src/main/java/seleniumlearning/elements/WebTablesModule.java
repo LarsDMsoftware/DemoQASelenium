@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class WebTablesModule {
 
@@ -73,7 +74,10 @@ public class WebTablesModule {
 
     public String submitRecordCheck(String input){
         System.out.printf("//*[contains(text()='%s')]%n", input);
+
         return this.driver.findElement(By.xpath(String.format("//div[text()='%s']", input))).getText();
+
+
     }
 
     public void quit(){
