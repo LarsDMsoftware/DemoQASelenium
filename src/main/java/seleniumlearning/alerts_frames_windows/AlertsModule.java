@@ -43,6 +43,11 @@ public class AlertsModule {
     public void promptAlertBtn(){
 
         this.driver.findElement(By.id("confirmButton")).click();
+
+    }
+
+    public void fillInPromptAlert(String input){
+        this.driver.switchTo().alert().sendKeys(input);
     }
 
     public void acceptDelayedAlertBtnPress(){
@@ -61,6 +66,10 @@ public class AlertsModule {
 
     public String returnAlertBtnSelection(){
         return this.driver.findElement(By.id("confirmResult")).getText();
+    }
+
+    public String returnPromptAlertBtnValue(){
+        return this.driver.findElement(By.id("promptResult")).getText();
     }
 
 }

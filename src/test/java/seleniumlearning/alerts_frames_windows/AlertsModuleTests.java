@@ -41,9 +41,9 @@ public class AlertsModuleTests {
     public void testConfirmAlertBtn_Accept()  {
 
         page.navigation();
-        page.basicAlertBtn();
+        page.confirmAlertBtn();
         page.acceptAlertBtnPress();
-        assertEquals("You Selected Ok",page.returnAlertBtnSelection());
+        assertEquals("You selected Ok",page.returnAlertBtnSelection());
         page.close();
 
     }
@@ -52,9 +52,18 @@ public class AlertsModuleTests {
     public void testConfirmAlertBtn_Dismiss()  {
 
         page.navigation();
-        page.basicAlertBtn();
+        page.confirmAlertBtn();
         page.dismissAlertBtnPress();
+        assertEquals("You selected Cancel",page.returnAlertBtnSelection());
         page.close();
 
+    }
+
+    public void testPromptAlertBtn(){
+        page.navigation();
+        page.promptAlertBtn();
+        page.fillInPromptAlert("Text");
+        assertEquals("You entered Text", page.returnPromptAlertBtnValue());
+        page.close();
     }
 }

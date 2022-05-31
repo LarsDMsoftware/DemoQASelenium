@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="401c1047-4ba0-4343-bc92-eba4642051a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/seleniumlearning/alerts_frames_windows/AlertsModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/alerts_frames_windows/AlertsModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/DynamicPropertiesModule.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumlearning/alerts_frames_windows/AlertsModuleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/alerts_frames_windows/AlertsModuleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumlearning/elements/DynamicPropertiesModuleTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
