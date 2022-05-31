@@ -73,7 +73,7 @@ public class WebTablesModule {
 
     public String submitRecordCheck(String input){
         System.out.printf("//*[contains(text()='%s')]%n", input);
-        return this.driver.findElement(By.xpath(String.format("//div[contains(text(),'%s')]", input))).getText();
+        return this.driver.findElement(By.xpath(String.format("//div[text()='%s']", input))).getText();
     }
 
     public void quit(){
