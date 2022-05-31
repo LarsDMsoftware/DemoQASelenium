@@ -1,7 +1,14 @@
 package seleniumlearning.alerts_frames_windows;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class AlertsModule {
 
@@ -11,6 +18,14 @@ public class AlertsModule {
 
         this.driver = driver;
 
+    }
+
+    public void navigation(){
+        this.driver.get("https://demoqa.com/alerts");
+    }
+
+    public void close(){
+        this.driver.close();
     }
 
     public void basicAlertBtn(){
@@ -26,18 +41,26 @@ public class AlertsModule {
     }
 
     public void promptAlertBtn(){
+
         this.driver.findElement(By.id("confirmButton")).click();
     }
 
+    public void acceptDelayedAlertBtnPress(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.alertIsPresent());
+        this.driver.switchTo().alert().accept();
+    }
+
     public void acceptAlertBtnPress(){
-        this.driver.findElement(By.xpath("//*[text()='Ok']"));
+        this.driver.switchTo().alert().accept();
     }
 
-    public void declineAlertBtnPress(){
-
+    public void dismissAlertBtnPress(){
+        this.driver.switchTo().alert().dismiss();
     }
 
-
-
+    public String returnAlertBtnSelection(){
+        return this.driver.findElement(By.id("confirmResult")).getText();
+    }
 
 }
