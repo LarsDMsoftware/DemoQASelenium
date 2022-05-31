@@ -72,13 +72,8 @@ public class WebTablesModule {
     }
 
     public String submitRecordCheck(String input){
-        /*
-        valuesArray.forEach((n) ->
-                stringArray.add(this.driver.findElement(By.xpath(String.format("//div[text()='%s']",n))).getText())
-        );
-        */
-        System.out.println(String.format("//div[contains(text()='%s')", input));
-        return this.driver.findElement(By.xpath(String.format("//div[contains(text()='%s')", input))).getText();
+        System.out.printf("//*[contains(text()='%s')]%n", input);
+        return this.driver.findElement(By.xpath(String.format("//div[contains(text(),'%s')]", input))).getText();
     }
 
     public void quit(){

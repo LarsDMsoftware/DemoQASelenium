@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="401c1047-4ba0-4343-bc92-eba4642051a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumlearning/alerts_frames_windows/AlertsModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/alerts_frames_windows/AlertsModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumlearning/alerts_frames_windows/AlertsModuleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumlearning/alerts_frames_windows/AlertsModuleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/WebTablesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumlearning/elements/WebTablesModule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="seleniumlearning.alerts_frames_windows" />
@@ -49,38 +48,34 @@
       <recent name="seleniumlearning.practiceform" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AlertsModuleTests.testConfirmAlertBtn_Accept">
-    <configuration name="AlertsModuleTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WebTablesModuleTests.addNewRecordTest">
+    <configuration name="WebTablesModuleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumlearning.alerts_frames_windows.*" />
+          <option name="PATTERN" value="seleniumlearning.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumlearning.alerts_frames_windows" />
-      <option name="MAIN_CLASS_NAME" value="seleniumlearning.alerts_frames_windows.AlertsModuleTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="seleniumlearning.elements" />
+      <option name="MAIN_CLASS_NAME" value="seleniumlearning.elements.WebTablesModuleTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertsModuleTests.testBasicAlertBtn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTablesModuleTests.addNewRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium-DemoQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumlearning.alerts_frames_windows.*" />
+          <option name="PATTERN" value="seleniumlearning.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumlearning.alerts_frames_windows" />
-      <option name="MAIN_CLASS_NAME" value="seleniumlearning.alerts_frames_windows.AlertsModuleTests" />
-      <option name="METHOD_NAME" value="testBasicAlertBtn" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="seleniumlearning.elements" />
+      <option name="MAIN_CLASS_NAME" value="seleniumlearning.elements.WebTablesModuleTests" />
+      <option name="METHOD_NAME" value="addNewRecordTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTablesModuleTests.addNewRecordTest" />
+        <item itemvalue="JUnit.WebTablesModuleTests" />
         <item itemvalue="TestNG.AlertsModuleTests.testConfirmAlertBtn_Accept" />
         <item itemvalue="TestNG.AlertsModuleTests.testConfirmAlertBtn_Dismiss" />
         <item itemvalue="TestNG.AlertsModuleTests.testDelayedAlertBtn" />
-        <item itemvalue="TestNG.AlertsModuleTests" />
-        <item itemvalue="TestNG.AlertsModuleTests.testBasicAlertBtn" />
       </list>
     </recent_temporary>
   </component>
